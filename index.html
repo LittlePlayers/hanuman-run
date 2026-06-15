@@ -59,7 +59,7 @@
 
   let hi=+(localStorage.getItem("hanumanHi")||0);
   let state="idle";              // idle | playing | dead | win
-  let speed, score, obstacles, spawnT, dayPhase, petals, confetti, t0;
+  let speed=6, score=0, obstacles=[], spawnT=0, dayPhase=0, petals=[], confetti=[], t0=0;
   const player={x:90,y:GROUND,vy:0,onGround:true,duck:false,leg:0,arm:0};
 
   // ----- input -----
